@@ -23,7 +23,16 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" />
+                android:layout_margin="20dp"
+                android:paddingBottom="50dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnAddCar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add a Car" />
+            </LinearLayout>
         </ScrollView>
 
         <androidx.cardview.widget.CardView

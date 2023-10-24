@@ -6,6 +6,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import com.google.android.material.navigation.NavigationView;
@@ -14,6 +15,7 @@ public class DashBoard extends AppCompatActivity {
     ImageView btnUserProfile, btnHamburger;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
+    Button btnAddCar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,7 @@ public class DashBoard extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawerLayout);
         navigationView = findViewById(R.id.navigationView);
         btnHamburger = findViewById(R.id.btnHambergerMenu);
+        btnAddCar = findViewById(R.id.btnAddCar);
         btnHamburger.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,5 +41,14 @@ public class DashBoard extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnAddCar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DashBoard.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
