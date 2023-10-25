@@ -22,10 +22,15 @@ public class LogIn extends AppCompatActivity {
         btnLogIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LogIn.this, DashBoard.class);
-                startActivity(intent);
+                try {
+                    Intent intent = new Intent(LogIn.this, DashBoard.class);
+                    startActivity(intent);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         });
+
 
         // Set OnClickListener for the Sign Up button
         btnSignUp.setOnClickListener(new View.OnClickListener() {

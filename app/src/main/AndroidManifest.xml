@@ -13,6 +13,15 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".BookingStatus"
+            android:exported="false" />
+        <activity
+            android:name=".CarSchedule"
+            android:exported="false" />
+        <activity
+            android:name=".CarPrice"
+            android:exported="false" />
+        <activity
             android:name=".DashBoard"
             android:exported="false" />
         <activity
@@ -35,8 +44,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>

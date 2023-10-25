@@ -98,7 +98,6 @@
                     android:layout_height="match_parent"
                     android:layout_marginTop="30dp"
                     android:layout_weight="1"
-                    android:onClick="onClick"
                     android:text="Log In" />
 
                 <TextView
@@ -113,8 +112,7 @@
                     android:id="@+id/btnSignUp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:onClick="onClick"
-                    android:text="Sign in" />
+                    android:text="Register" />
 
                 <TextView
                     android:id="@+id/textView3"

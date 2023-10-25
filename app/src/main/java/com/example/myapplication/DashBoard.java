@@ -2,17 +2,15 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-
 import com.google.android.material.navigation.NavigationView;
 
 public class DashBoard extends AppCompatActivity {
-    ImageView btnUserProfile, btnHamburger;
+    ImageView btnUserProfile, btnHamburgerMenu;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Button btnAddCar;
@@ -25,9 +23,9 @@ public class DashBoard extends AppCompatActivity {
         btnUserProfile = findViewById(R.id.btnUserProfile);
         drawerLayout = findViewById(R.id.drawerLayout);
         navigationView = findViewById(R.id.navigationView);
-        btnHamburger = findViewById(R.id.btnHambergerMenu);
+        btnHamburgerMenu = findViewById(R.id.btnHamburgerMenu);
         btnAddCar = findViewById(R.id.btnAddCar);
-        btnHamburger.setOnClickListener(new View.OnClickListener() {
+        btnHamburgerMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 drawerLayout.openDrawer(navigationView);

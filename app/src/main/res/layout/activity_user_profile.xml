@@ -285,11 +285,10 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/btnHamburgerMenu"
                 android:layout_width="20dp"
                 android:layout_height="40dp"
                 android:layout_weight="1"
-
                 app:srcCompat="@drawable/hamburger" />
 
             <ImageView
@@ -297,12 +296,10 @@
                 android:layout_width="20dp"
                 android:layout_height="40dp"
                 android:layout_weight="1"
-
                 app:srcCompat="@drawable/home" />
 
-
             <ImageView
-                android:id="@+id/imageView9"
+                android:id="@+id/btnUserProfile"
                 android:layout_width="20dp"
                 android:layout_height="40dp"
                 android:layout_weight="1"
@@ -310,5 +307,24 @@
                 app:srcCompat="@drawable/profile" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#156F9E"
+        android:scrollbarSize="20dp">
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:background="@color/white"
+            app:headerLayout="@layout/header_navigation"
+            app:menu="@menu/navigation_menu">
+
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
 </RelativeLayout>
 

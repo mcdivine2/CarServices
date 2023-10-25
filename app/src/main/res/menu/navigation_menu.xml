@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
     <item
-        android:id="@+id/nav_item1"
-        android:title="Contact"
+        android:id="@+id/itemHome"
+        android:title="Home"
         android:icon="@drawable/call" />
     <item
-        android:id="@+id/nav_item2"
-        android:title="Message"
+        android:id="@+id/itemCarAvailable"
+        android:title="Car's Available"
         android:icon="@drawable/message" />
     <item
-        android:id="@+id/nav_item4"
-        android:title="Email"
+        android:id="@+id/itemPrice"
+        android:title="Price"
+        android:icon="@drawable/mail" />
+    <item
+        android:id="@+id/itemSchedule"
+        android:title="Schedule"
+        android:icon="@drawable/mail" />
+    <item
+        android:id="@+id/itemBookingStatus"
+        android:title="Booking Status"
+        android:icon="@drawable/mail" />
+    <item
+        android:id="@+id/itemLogOut"
+        android:title="Log out"
         android:icon="@drawable/mail" />
     <!-- Add more items as needed -->
 </menu>
