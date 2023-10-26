@@ -12,6 +12,8 @@ public class UserProfile extends AppCompatActivity {
     ImageView btnHome, btnUserProfile, btnHamburgerMenu;
     NavigationView navigationView;
     DrawerLayout drawerLayout;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,7 @@ public class UserProfile extends AppCompatActivity {
         btnHamburgerMenu = findViewById(R.id.btnHamburgerMenu);
         navigationView = findViewById(R.id.navigationView);
         drawerLayout = findViewById(R.id.drawerLayout);
+
 
 
         btnHome.setOnClickListener(new View.OnClickListener() {

@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 import android.content.Intent;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import com.google.android.material.navigation.NavigationView;
+import com.example.myapplication.NavigationMenuController;
 
 public class DashBoard extends AppCompatActivity {
     ImageView btnUserProfile, btnHamburgerMenu;
@@ -47,6 +49,16 @@ public class DashBoard extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
+
+
+    private void openHomeActivity() {
+        Intent intent = new Intent(DashBoard.this, DashBoard.class); // Replace DashBoard with the actual name of your home activity.
+        startActivity(intent);
+    }
+    private void openCarPrice() {
+        Intent intent = new Intent(DashBoard.this, CarPrice.class); // Replace DashBoard with the actual name of your home activity.
+        startActivity(intent);
+    }
+
 }
